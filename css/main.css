@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Spoof";
+  src: url("../src/font/Spoof-Regular.woff") format("woff");
+}
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spoof", sans-serif;
+  color: #FFFFFF;
+}
+
+header {
+  font-family: "Spoof", sans-serif;
+  height: 100vh;
+  background-image: url("../src/img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header div {
+  position: absolute;
+  padding: 0 7vw;
+  bottom: 0;
+}
+
+.main-title {
+  font-size: calc(var(--index) * 8);
+  position: absolute;
+  width: -moz-min-content;
+  width: min-content;
+  bottom: 12vh;
+  line-height: 0.9;
+}
+
+.name {
+  font-size: calc(var(--index) * 2);
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  bottom: 4vh;
+  line-height: 0.9;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Spoof';
+    src: url('../src/font/Spoof-Regular.woff') format('woff');
+}
+
+
+:root{
+    --index: calc(1vw + 1vh);
+}
+
+$font: 'Spoof', sans-serif;
+$main-color: #FFFFFF;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: $font;
+    color: $main-color;
+}
+
+header{
+    font-family: $font;
+    height: 100vh;
+    background-image: url("../src/img/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;
+    div {
+        position: absolute;
+        padding: 0 7vw;
+        bottom: 0;
+    }
+}
+
+.main-title{
+    font-size: calc(var(--index) * 8);
+	position: absolute;
+	width: min-content;
+	bottom: 12vh;
+	line-height: .9;
+}
+
+.name{
+    font-size: calc(var(--index) * 2);
+	position: absolute;
+	width: max-content;
+	bottom: 4vh;
+	line-height: .9;
+}
