@@ -14,6 +14,7 @@
 body {
   font-family: "Spoof", sans-serif;
   color: #FFFFFF;
+  background: #000;
 }
 
 header {
@@ -47,4 +48,78 @@ header div {
   width: max-content;
   bottom: 4vh;
   line-height: 0.9;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+main {
+  margin: 15vh 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1.title {
+  font-size: calc(var(--index) * 4);
+  margin: 5vh 0;
+}
+
+.workshop--inline {
+  margin: 8vh 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.workshop--item {
+  margin: 0 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workshop--item img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px #115fb3, 0 0 20px #115fb3, 0 0 30px #115fb3;
+  border-radius: 15px;
+  margin-bottom: 2vh;
+  filter: grayscale(50%);
+}
+.workshop--item img:hover {
+  filter: grayscale(0%); /* 50% grayscale */
+}
+.workshop--item h2.wr--title {
+  font-size: calc(var(--index) * 2);
+}
+.workshop--item a {
+  margin: 0.5vh 0;
+}
+.workshop--item h2 {
+  margin: 0.5vh 0;
+}
+.workshop--item h3 {
+  margin: 0.5vh 0;
+  font-weight: 100;
+}
+
+footer {
+  box-shadow: 0px -5px 15px -5px #115fb3;
+  padding: 0 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+}
+footer div.icon--container {
+  width: 8vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div.icon--container img .icon {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
