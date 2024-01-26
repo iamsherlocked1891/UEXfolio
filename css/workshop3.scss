@@ -44,7 +44,9 @@ header{
     background-repeat: no-repeat; 
     text-shadow: 0 0 20px #2b829d;
     h1{
-        font-size: calc(var(--index) * 2.5)
+        margin-top: -3vh;
+        font-size: calc(var(--index) * 2.3 );
+        text-align: center;
     }
     h2{
         font-size: calc(var(--index) * 1.25);
@@ -52,15 +54,18 @@ header{
     }
 }
 
+
 main{
     margin: 15vh 7vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     section.line {
         h2{
-        font-size: calc(var(--index) * 2);
+            font-size: calc(var(--index) * 2);
+            text-align: right;
+            margin: 2vh 3vw;
         }
         margin: 5vh 0;
         div.text--container{
@@ -69,7 +74,7 @@ main{
             text-align: justify;
             h2{
                 font-size: calc(var(--index) * 2);
-                text-align: left;
+                text-align: right;
                 margin: 2vh 3vw;
             }
             p{
@@ -79,37 +84,33 @@ main{
                 text-indent: 2vw;
             }
         }
+        p.u{
+            font-size: calc(var(--index) * 10);
+        }
         display: flex;
         flex-direction: row;
-        img.diag{
-            
-            width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 40%;
             height: auto;
-            filter: brightness(80%);
         }
-        img.persona{
+        img.diag{
             width: 50%;
             height: auto;
-        }
-        img.exp{
-            width: 30%;
-            height: auto;
+            filter: brightness(90%);
+
         }
     }
     
 } 
+
 
 .slider {
     margin: 3vh 0;
     position: relative;
     overflow: hidden;
     width: 100%;
-    p{
-        margin: 2vh 3vw;
-        letter-spacing: 0.5px;
-        line-height: 1.6;
-        text-indent: 2vw;
-    }
     h2{
         font-size: calc(var(--index) * 2);
         text-align: right;
@@ -120,34 +121,21 @@ main{
 }
 
 .slide {
-    margin: 5vh 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
+    text-align: justify;
     img{
         margin: 0 5vw;
-        width: 20%;
+        width: 40%;
         height: auto;
     }
     p{
-        font-weight: 100;
-        text-align: right;
         margin: 2vh 5vw 2vh 0;
         letter-spacing: 0.5px;
         line-height: 1.6;
         text-indent: 2vw;
     } 
-    p.j{
-        text-align: justify;
-        text-indent: 0;
-        span{
-            font-weight: 900;
-            line-height: 3;
-        }
-
-    }
 }
 
 .prev, .next {
