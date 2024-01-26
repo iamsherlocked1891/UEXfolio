@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Spoof";
+  src: url("../src/font/Spoof-Regular.woff") format("woff");
+}
+:root {
+  --index: calc(1vw + 1vh);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #FFFFFF;
+  font-family: "Spoof", sans-serif;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../src/img/bg_wr.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 0 0 20px #2b829d;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: calc(var(--index) * 2.5);
+}
+header h2 {
+  font-size: calc(var(--index) * 1.25);
+  font-weight: 200;
+}
+
+main {
+  margin: 15vh 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section.line {
+  margin: 5vh 0;
+  display: flex;
+  flex-direction: row;
+}
+main section.line h2 {
+  font-size: calc(var(--index) * 2);
+}
+main section.line div.text--container {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+main section.line div.text--container h2 {
+  font-size: calc(var(--index) * 2);
+  text-align: left;
+  margin: 2vh 3vw;
+}
+main section.line div.text--container p {
+  margin: 2vh 3vw;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-indent: 2vw;
+}
+main section.line img.diagr {
+  width: 100%;
+  height: auto;
+  filter: brightness(80%);
+}
+main section.line img.persona {
+  width: 50%;
+  height: auto;
+}
+main section.line img.exp {
+  width: 30%;
+  height: auto;
+}
+
+.slider {
+  margin: 3vh 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.slider p {
+  margin: 2vh 3vw;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-indent: 2vw;
+}
+.slider h2 {
+  font-size: calc(var(--index) * 2);
+  text-align: right;
+  margin: 2vh 3vw;
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.slide {
+  margin: 5vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.slide img {
+  margin: 0 5vw;
+  width: 20%;
+  height: auto;
+}
+.slide p {
+  font-weight: 100;
+  text-align: right;
+  margin: 2vh 5vw 2vh 0;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  text-indent: 2vw;
+}
+.slide p.j {
+  text-align: justify;
+  text-indent: 0;
+}
+.slide p.j span {
+  font-weight: 900;
+  line-height: 3;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px; /* Adjust as per arrow size */
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+  box-shadow: 0px -5px 15px -5px #115fb3;
+  padding: 0 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+}
+footer div.icon--container {
+  width: 8vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div.icon--container img .icon {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=workshop2.css.map */
