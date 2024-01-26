@@ -4,8 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empathy</title>
+    <link rel="stylesheet" href="../css/workshop1.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <h1 class="main-title">SmoothRide</h1>
+            <h2 class="name">Design by Empathy</h2>
+        </div>
+    </header>
+    <main>
+        <section class="line">
+            <img src="../src/img/w1/girl.png" alt="" class="persona">
+            <div class="text--container">
+                <h2>Persona</h2>
+                <p>
+                    As the sun rose, 15-year-old Mia readied herself for her daily school journey on her freestyle scooter. The brisk morning air greeted her with a refreshing chill as she glided through her suburban neighborhood. The rhythmic clatter of her scooter wheels on the pavement provided a comforting soundtrack, like a familiar morning melody.
+                    With each push, the world transformed into a vibrant tapestry of colors and shapes. Murals on nearby buildings seemed to come alive, narrating stories of her lively community. Mia's scooter ride was a daily wellspring of visual inspiration, a canvas of urban art that ignited her creativity.
+                    Emotionally, Mia felt liberated as she zipped through the streets. The wind tousled her hair, and the freedom of movement soothed her teenage soul, a moment of pure joy amidst school pressures and adolescent drama. Each twist and turn lightened her heart, erasing the worries of the day.
+                    Her scooter journey wasn't just transport; it was a daily adventure, connecting her with her surroundings, filling her with wonder and anticipation for the world ahead.
+                </p>
+            </div>            
+        </section>
+        <section class="line">
+            <div class="text--container">
+                <h2>Problem statement</h2>
+                <p>
+                    The main problem faced by our user, the 15-year-old Mia, is the risk of falling down from her freestyle scooter due to uneven or poorly maintained pavements during her daily school journey. The key touchpoint at the heart of this problem is the condition of the pavements she encounters along her route.
+                    Mia's scooter journey is more than just a mode of transportation; it's a daily adventure that connects her with her surroundings and provides her with a sense of freedom and joy amidst the pressures of school and adolescence. The condition of the pavements is relevant because it directly impacts her safety and overall experience during this journey.
+                    Improving the condition of the pavements will not only ensure Mia's safety but also enhance her daily adventure, making it a smoother and more enjoyable experience. Moreover, addressing the pavement problem can also have broader implications for urban mobility by making alternative and eco-friendly modes of transportation, like freestyle scooters, safer and more appealing for young riders like Mia.
+                </p>
+            </div> 
+            <img src="../src/img/w1/problem.png" alt="" class="persona">
+        </section>
+        
+
+        <section class="slider">
+            <h2>Solutions</h2>
+            <div class="slide">
+                <img src="../src/img/w1/Solution1.png" alt="Image 1">
+                <p>The first solution offers the implementation of colorful and smooth surfaced paths, running on the walking paved streets. These new ways offer better adhesion and comfort for the people transiting with small wheeled vehicles. That solution implies minimal infrastructure and spatial changes, however truly changing the experience and safety of its users.
+                    The curved smooth lines offer diverse attractive paths, making moving in the city a fun experience that may attract children and full grown adults to it. The use of bright colors stimulates also the sight and gives a more dynamical aspect to the street.
+                    Facilitating movement and increasing safety for transportation such as bikes, scooters, rollerblades, skaters and others, may convince more people to use them. As we understand the need of decreasing car use for air pollution, noise pollution and traffic reasons, attracting people to greener means of transport can only improve the mobility and health of the city.
+                </p>
+            </div>
+            <div class="slide">
+                <img src="../src/img/w1/Solution4.png" alt="Image 2">
+                <p>The second proposed solution is the creation of completely separated tunnels for small, wheeled vehicles. As we were able to create underground metros, we could imagine the same kind of structure for medium speed vehicles.
+                    This solution offers the total separation of 3 types of mobility based on their size, carbon emissions, and speed. Walkers and cars could use freely the above streets as it is easy for these two types of mobility to collaborate. Cars will have to stay overground because of their carbon emissions, and walking people would keep using standard sidewalks.
+                    Underground would lay roads for medium speed vehicles such as bicycles, freestyle scooters, rollerblades, skaters, and other small, wheeled vehicles that may have issues adapting to the speed of cars and trucks for example. They would also be separated from the walkers, thus be able to move much faster and avoid any possible confrontation with them.
+                    In addition to that separating the roads according to vehicle types would also offer a better security for everyone and reduce accidents. Sidewalks would be free from any type of wheeled vehicles, and these would be protected from road accidents and traffic.
+                </p>
+            </div>
+            <!-- More slides as needed -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="icon--container">
+            <a href="https://www.linkedin.com/in/olena-zavertiaieva-7104b0235/" target="_blank"><img src="../src/img/link_icon.png" alt="" class="icon"> </a>
+            <a href="https://github.com/iamsherlocked1891" target="_blank"><img src="../src/img/git_icon.png" alt="" class="icon"></a>
+        </div>
+        <div>
+            <a href="../index.html">Main Menu</a>
+        </div>
+        <div>
+            <a href="mailto:someone@example.com">olena.zavertiaieva@epfl.ch</a>
+        </div>
+    </footer>  
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            slides[slideIndex].style.display = "flex"; 
+        }
+
+    </script>
 </body>
 </html>
