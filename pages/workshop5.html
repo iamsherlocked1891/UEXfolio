@@ -4,8 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Context</title>
+    <link rel="stylesheet" href="../css/workshop5.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <h1 class="main-title">Stray Dogs<br> of Sicily</h1>
+            <h2 class="name">Design by Context</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="line">
+            <img src="../src/img/w5/s.png" alt="">
+            <div class="text--container">
+                <h2>Palermo, Italy</h2>
+                <p>
+                    In Sicily, Italy, the issue of stray dogs presents a poignant challenge that resonates with the heart. The picturesque landscapes of this Mediterranean island belie the struggles faced by countless homeless dogs roaming its streets. These four-legged souls, once companions or abandoned, find themselves navigating a precarious existence, yearning for the warmth of a loving home. The Sicilian streets bear witness to their resilience, reflecting both the beauty and the harshness of their daily lives. While efforts are made by compassionate individuals and organizations to address this issue, the poignant reality remains—a plea for empathy and understanding for these dogs, who, despite their adversity, embody a spirit of resilience that speaks to the compassion we should extend to all living beings.
+                </p>
+            </div>
+        </section>
+
+        <section class="slider">
+            <h2></h2>
+
+            <div class="slide">
+                <img src="../src/img/w5/d1.png" alt="Image 1" class="dog">
+                <div class="text--container"> 
+                    <h2>To EAT</h2>
+                    <p class="j">
+                        Gaston, the stray dog, faces this problem as he roams the streets of the tourist area. He often scavenges for food scraps around the wasteful restaurant industry, finding both sweet and savory treats that bring him happiness.
+                    </p>
+                </div>
+                <div class="text--container"> 
+                    <p class="j">
+                        Create separate eating areas for stray dogs, serving restaurant leftovers using metal bowls for easy cleaning and scalability, thus solving both restaurant wastefulness and the issue of starving strays.
+                    </p>
+                </div>
+                <img src="../src/img/w5/s1.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="../src/img/w5/d2.png" alt="Image 1" class="dog">
+                <div class="text--container"> 
+                    <h2>To SOCIALIZE</h2>
+                    <p class="j">
+                        Bruno, the stray dog, is facing the challenge of rebuilding trust with humans after being abandoned on a highway in Sicily. His initial wariness and fear of people make it difficult for him to seek the care and companionship he desperately needs.
+                    </p>
+                </div>
+                <div class="text--container"> 
+                    <h2></h2>
+                    <p class="j">
+                        Create shelter spaces in non-touristic public areas on campus, utilizing open space to prevent overcrowding. Prioritize reacclimating dogs to humans through activities like walks, play, and communal interactions, ensuring their well-being.
+                    </p>
+                </div>
+                <img src="../src/img/w5/s2.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="../src/img/w5/d3.png" alt="Image 1" class="dog">
+                <div class="text--container"> 
+                    <h2>To SHELTER</h2>
+                    <p class="j">
+                        Coal, the stray dog, faces a challenging situation due to his trauma from human abuse. His avoidance of human public places and other dogs makes it difficult for him to find shelter, especially when the weather gets hot.
+                    </p>
+                </div>
+                <div class="text--container"> 
+                    <h2></h2>
+                    <p class="j">
+                        The solution to Coal's problem involves providing shaded spots with cozy beds for him to create a safe haven and collaborating with local animal behaviorists to organize regular low-key socialization events, gradually increasing exposure to people and dogs in a controlled environment.
+                    </p>
+                </div>
+                <img src="../src/img/w5/s3.png" alt="Image 1">
+            </div>
+
+            
+            <!-- More slides as needed -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="icon--container">
+            <a href="https://www.linkedin.com/in/olena-zavertiaieva-7104b0235/" target="_blank"><img src="../src/img/link_icon.png" alt="" class="icon"> </a>
+            <a href="https://github.com/iamsherlocked1891" target="_blank"><img src="../src/img/git_icon.png" alt="" class="icon"></a>
+        </div>
+        <div>
+            <a href="../index.html">Main Menu</a>
+        </div>
+        <div>
+            <a href="mailto:someone@example.com">olena.zavertiaieva@epfl.ch</a>
+        </div>
+    </footer>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            slides[slideIndex].style.display = "flex"; 
+        }
+
+    </script>
 </body>
 </html>
